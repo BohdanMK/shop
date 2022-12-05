@@ -1,0 +1,72 @@
+.reviews {
+
+    display: flex;
+    column-gap: 1.8rem;
+
+
+    &:not(:last-child) {
+        border-bottom: 1px solid rgba($color: #141414, $alpha: .15);
+        margin-bottom: 1rem;
+    }
+
+    &__logo-icon {
+        width: 80px;
+        height: 80px;
+
+        border-radius: 50%;
+        position: relative;
+        top: .5rem;
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__autor-star {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+    &__time {
+        display: block;
+        @include text-medium;
+        font-size: .9rem;
+        color: rgba($color: #141414, $alpha: .3);
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+    }
+
+    &__ansver {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+
+        @include text-medium;
+        color: $orange;
+        font-weight: 500;
+
+        padding: 0;
+        margin: 0;
+
+        transition: .2s linear;
+        &:hover {
+            transform: scale(1.04);
+        }
+    }
+
+    &__favorite {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+
+        transition: .2s linear;
+        &:hover {
+            transform: scale(1.04);
+        }
+    }
+}

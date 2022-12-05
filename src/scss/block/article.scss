@@ -1,0 +1,48 @@
+.article {
+    width: 24%;
+    max-width: 376px;
+
+    border-radius: 3px;
+    box-shadow: 0 4px 20px rgba($color: #000000, $alpha: .1);
+
+    @include breakpoint($laptop-L) {
+        width: 48%;
+        max-width: 100%;
+    }
+
+    @include breakpoint($laptop) {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.article__images {
+    width: 100%;
+}
+
+.article__info {
+    padding: 1.2rem;
+
+    & time {
+        @include text-medium;
+        color: #ababab;
+    }
+}
+
+.article__title {
+    & a {
+        display:block;
+        @include text-medium;
+        font-size: 1.2rem;
+        color: $main;
+        font-weight: 600;
+        line-height: 1.6;
+        text-decoration: none;
+
+        margin-bottom: 1rem;
+
+        &:hover {
+            transform: scale(1.01);
+        }
+    }
+}

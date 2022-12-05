@@ -1,0 +1,46 @@
+.products {
+    display: grid;
+    grid-template-columns: minmax(250px, 350px) 1fr;
+    grid-gap: 1.8rem;
+
+    margin-bottom: 2rem;
+
+    @include breakpoint($tablet) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__filters {
+        position: relative;
+    }
+
+    &__examples {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px,auto) );
+        grid-gap: 1.8rem;
+    }
+
+}
+
+.products__filters--title{
+    width: 100%;
+    background-color: $main;
+    text-align: center;
+
+}
+
+.products__filters-btn {
+    width: 100%;
+
+    @include text-medium;
+    font-size: 1.6rem;
+    font-weight: 700;
+
+    background: transparent;
+    border: none;
+    padding: 1.5rem 0;
+
+    @include breakpoint($tablet) {
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,100 @@
+.tab {
+    margin-bottom: 1.8rem;
+
+    &__wraper {
+        padding: 1rem;
+        padding-bottom: 0;
+        box-shadow: 0 4px 10px;
+    }
+
+    &__container:last-child {
+        padding-bottom: 1rem;
+    }
+
+    &__header {
+        border-bottom: 1px solid rgba($color: #141414, $alpha: .20);
+
+        margin-bottom: 1.8rem;
+
+        @include breakpoint($tablet) {
+            display: none;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        border: none;
+        background: transparent;
+        @include text-medium;
+        color: rgba($color: #141414, $alpha: .5);
+        text-decoration: none;
+
+        padding: 0;
+        padding-bottom: .5rem;
+
+        margin-right: 4rem;
+        margin-bottom: -1px;
+
+        &.active {
+            color: $main;
+            border-bottom: 2px solid $orange;
+        }
+    }
+
+    &__contant {
+        position: relative;
+    }
+
+    &__section {
+        display: none;
+
+        @include text-medium;
+        color: $main;
+        font-weight: 500;
+        line-height: 1.6;
+
+
+
+        background-color: $white;
+        & p {
+            padding-bottom: .5rem;
+        }
+
+        & p:last-child {
+            padding-bottom: 2rem;
+        }
+
+        &.active {
+            display: block;
+
+        }
+    }
+
+    &__spoiler {
+        display: none;
+
+        @include breakpoint($tablet) {
+            display: block;
+
+            @include text-medium;
+            color: #141414;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #000;
+
+            cursor: pointer;
+
+            background: transparent;
+            border: none;
+
+            margin: 0;
+            padding: 0;
+            margin-bottom: 1rem;
+
+            &.active {
+                border-bottom: 2px solid $orange;
+            }
+
+        }
+    }
+}

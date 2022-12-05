@@ -1,0 +1,75 @@
+.card-header {
+    &__availability {
+        margin-top: 1rem;
+        @include text-medium;
+        color: #24AD53;
+    }
+
+    &__availability {
+        margin-bottom: 1.8rem;
+    }
+}
+
+.card-header__info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding: .5rem 0;
+}
+
+.card-header__left {
+
+    display: flex;
+    align-items: center;
+    column-gap: 1.8rem;
+
+    @include breakpoint($mobile) {
+        flex-direction: column;
+        row-gap: .5rem;
+        align-items: flex-start;
+    }
+}
+
+.card-header__title {
+    @include text-medium;
+    color: $main;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card-header__right {
+
+    display: flex;
+    column-gap: 1rem;
+}
+
+
+
+.card-header__table {
+    width: 100%;
+    display: block;
+    border-top: 1px solid rgba($color: $main, $alpha: .15);
+    border-bottom: 1px solid rgba($color: $main, $alpha: .15);
+
+    @include text-medium;
+    color: $main;
+
+    padding: 1.8rem 0;
+
+    margin-bottom: 1.8rem;
+
+    &-th, &-td {
+        text-align: left;
+        padding-bottom: 1.2rem;
+    }
+
+    &-th {
+        padding-right: 2.6rem;
+    }
+
+    &-td {
+        color: rgba($color: $main, $alpha: .5);
+    }
+}
+

@@ -1,0 +1,22 @@
+.articles {
+    margin-bottom: 8rem
+}
+.articles__title {
+    @include text-medium;
+    font-size: 2rem;
+    color: $main;
+    font-weight: 700;
+
+    margin-bottom: 2rem;
+}
+
+.articles__contant {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    @include breakpoint($laptop-L) {
+        gap: .5rem;
+    }
+
+}

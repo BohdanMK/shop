@@ -1,0 +1,98 @@
+.menu-body {
+    display: block;
+    width: 75%;
+    position: relative;
+    @include breakpoint($laptop) {
+        display: none;
+    }
+    &.active{
+    @include breakpoint($laptop) {
+
+        display: block;
+        width: 100%;
+        max-width: 991px;
+        height: 100%;
+
+        position: absolute;
+        top: calc(0% + 70px);
+        left: 0;
+        z-index: 1000;
+
+        padding-bottom: 5rem;
+        overflow: auto;
+
+        background-color: rgba($color: #000000, $alpha: .90);
+
+    }
+    }
+}
+
+
+.menu {
+    width: 90%;
+
+}
+
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    align-items: center;
+    column-gap: 3.5rem;
+    row-gap: 5px;
+
+    @include breakpoint($laptop-Low) {
+        column-gap: 1rem;
+    }
+
+    @include breakpoint($laptop) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        row-gap: 2rem;
+        align-items: flex-start;
+        padding-top: 2rem;
+        padding-left: 2rem;
+    }
+
+}
+
+.menu__iteam--cataloge {
+    display: none;
+
+    @include breakpoint($laptop) {
+        display: flex;
+        align-items: center;
+        & span {
+            margin: -5px 0 0 15px;
+            @include text-medium;
+            font-size: 2rem;
+            color: #fff;
+
+        }
+    }
+}
+
+.menu__iteam:not(:last-child) {
+    margin-right: 3.8rem;
+}
+
+.menu__link {
+    @include text-medium;
+    line-height: 1.25;
+    text-decoration: none;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: $white;
+        transition: .3s linear;
+
+    }
+
+    &:hover:after {
+        width: 100%;
+    }
+}

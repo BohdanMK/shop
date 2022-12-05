@@ -1,0 +1,63 @@
+.goods-page__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 380px;
+    margin-bottom: 7rem;
+    row-gap: 2rem;
+
+    @include breakpoint($laptop) {
+        justify-content: flex-end;
+        flex-direction: column;
+        margin-left: 250px;
+    }
+
+    @include breakpoint($tablet) {
+        margin-left: 0px;
+    }
+}
+
+.goods-page__footer-container {
+    display: flex;
+}
+
+.goods-page__footer-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.goods-page__footer-list {
+    display: flex;
+    gap: 2.2rem;
+
+    padding: 0 .5rem;
+
+    @include breakpoint($laptop) {
+        gap: .6rem;
+    }
+}
+
+.goods-page__footer-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    &.active {
+        background-color: $orange;
+        & >a {
+            color: #fff;
+        }
+    }
+}
+
+.goods-page__footer-link {
+    @include text-medium;
+    color: #000;
+    font-size: 1.1rem;
+
+    text-decoration: none;
+}
+

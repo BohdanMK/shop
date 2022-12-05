@@ -1,0 +1,98 @@
+.tech-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+
+    margin-bottom: 8rem;
+    @include breakpoint($laptop-Low) {
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+}
+
+.tech-card__example {
+    width: 46%;
+    display: flex;
+    justify-content: space-between;
+
+    box-shadow: 0 4px 20px rgba($color: #000000, $alpha: .15);
+
+
+    @include breakpoint($laptop) {
+        width: 100%;
+        max-width: 768px;
+    }
+}
+
+.tech-card__example-left {
+    width: 50%;
+    padding-left: 2rem;
+    @include breakpoint($laptop-Low) {
+        width: 60%;
+    }
+
+}
+
+.tech-card__example-title {
+    width: 100%;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    @include text-medium;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: $main;
+    cursor: pointer;
+
+
+    &::after {
+        content: "";
+        display: block;
+        width: 30%;
+        height: 2px;
+        background: $orange;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        transition: all .2s linear;
+    }
+
+    &:hover::after {
+        width: 75%;
+    }
+}
+
+.tech-card__example-text {
+
+    margin-bottom: 3rem;
+    & p {
+    @include text-medium;
+    color: $main;
+    }
+}
+
+.tech-card__example-right {
+    position: relative;
+    width: 100%;
+    max-width: 388px;
+
+    overflow: hidden;
+
+    @include breakpoint($laptop-Low) {
+        width: 40%;
+    }
+
+}
+
+.tech-card__picture {
+    width: 100%;
+
+    min-height: 250px;
+
+    display: block;
+
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    z-index: 2;
+}

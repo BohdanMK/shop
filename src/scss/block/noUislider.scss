@@ -1,0 +1,41 @@
+
+.noUi-target {
+    width: 100%;
+    max-width: 330px;
+    height: 2px;
+
+    margin: 0 .2rem;
+
+    border:none;
+    background: $orange;
+    box-shadow: none;
+    opacity: 1;
+
+    @include breakpoint($tablet) {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.noUi-connect {
+    background: #000;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 16px;
+    height: 16px;
+
+    background-color: $main;
+    box-shadow: none;
+    border-radius: 50%;
+    border: 3px solid $orange;
+    top: -7px;
+    right: -13px;
+}
+
+.noUi-handle:after,
+.noUi-handle:before {
+    display: none;
+}
+
+

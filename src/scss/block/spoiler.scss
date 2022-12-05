@@ -1,0 +1,154 @@
+.spoiler__body {
+    @include breakpoint($laptop) {
+        display: none;
+
+        &.open {
+            display: block;
+        }
+    }
+}
+.spoiler__btn {
+    @include text-medium;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.5rem;
+
+    background: none;
+    border: none;
+    outline: none;
+
+    &:hover {
+        transform: scale(1.01);
+    }
+
+
+
+    @include breakpoint($laptop) {
+        display: block;
+
+    }
+}
+
+.spoiler__btn .spoiler__btn-arrow {
+    display: none;
+
+    @include breakpoint($laptop) {
+
+        display: inline-block;
+        margin-left: 1rem;
+        line-height: 0;
+
+    }
+}
+.spoiler__btn.open .spoiler__btn-arrow {
+    transform: rotateX(180deg);
+}
+
+
+
+
+.spoiler__item {
+    display: flex;
+
+    margin-bottom: 1.2rem;
+
+    &-icon {
+        width: 1rem;
+        height: 1.2rem;
+        margin: 2px 7px 20px 0;
+    }
+
+    &-info {
+        align-self: center;
+        @include text-medium;
+        color: rgba($color: #fff, $alpha: .8);
+        text-decoration: none;
+        line-height: 1.5;
+
+
+    }
+}
+
+.spoiler__link {
+    display: block;
+    @include text-medium;
+    color: rgba($color: #fff, $alpha: .8);
+    text-decoration: none;
+    line-height: 1.5;
+
+    margin-bottom: 1.2rem;
+    transition: all .2s linear;
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &.has-inner {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.spoiler__inner-link {
+    color: $orange;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.spoiler__social {
+    display: flex;
+    gap: .5rem;
+
+}
+
+.spoiler__social-link {
+    display: block;
+    transition: all .3s linear;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.spoiler__social-icon {
+    width: 43px;
+    height: 43px;
+}
+
+
+
+.spoiler__input-box {
+    display: flex;
+    height: 50px;
+
+
+    margin-top: 1rem;
+
+}
+
+.spoiler__input {
+    height: 100%;
+
+    @include text-medium;
+    background-color: rgb(28, 29, 30);
+    outline: none;
+    border: 1px solid rgba($color: #fff, $alpha: 0.05);
+}
+
+.spoiler__btn-form {
+    width: 50px;
+    height: 100%;
+
+    background: $orange;
+    border: none;
+    margin: 0;
+}
+
+.spoiler__btn-icon {
+    width: 9px;
+    height: 16px;
+}

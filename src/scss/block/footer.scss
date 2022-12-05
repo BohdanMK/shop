@@ -1,0 +1,100 @@
+.footer__head {
+    width: 100%;
+    background: url("../../img/footer/Mask Group.jpg") center no-repeat;
+    background-image: url("@img/footer/Mask Group.jpg");
+    background-size: cover;
+
+
+}
+
+.footer__head-contant {
+    width: 100%;
+
+}
+
+.footer__head-title {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    @include text-medium;
+    font-size: 2rem;
+    font-weight: 700;
+    color: $orange;
+
+    padding-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.footer__head-text {
+    padding-bottom: 3.5rem;
+    & p {
+        @include text-medium;
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+}
+
+.footer__body {
+    background: $main;
+    margin-top: -1rem;
+
+
+}
+
+.footer__firsth,
+.footer__second {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding-top: 3rem;
+
+    border-bottom: 1px solid rgba($color: #fff, $alpha: .58);
+
+    @include breakpoint($laptop-Low) {
+        gap: .2rem;
+    }
+
+    @include breakpoint($laptop) {
+        display: block;
+        width: 100%;
+    }
+}
+
+.footer__bottom {
+    margin-top: -1px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    background: $main;
+
+    border-bottom: 1px solid rgba($color: #fff, $alpha: .58);
+}
+
+.footer__bottom-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include text-medium;
+    font-size: .9rem;
+    line-height: 1.6;
+    color: rgba($color: #fff, $alpha: .8);
+}
+
+.footer__bottom-left {
+    width: 60%;
+    row-gap: 2rem;
+    @include breakpoint($tablet) {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+.footer__bottom-right {
+
+
+    @include breakpoint($tablet) {
+
+        margin: 0 auto;
+    }
+}

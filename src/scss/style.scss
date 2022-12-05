@@ -1,0 +1,93 @@
+@import "fonts";
+@import "_vars";
+@import "_reset";
+@import "_mixin";
+
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-weight: 500;
+    font-size: 10px;
+
+    margin: 0 auto;
+
+    color: #ECF1F2;
+
+    &.active {
+      overflow: hidden;
+    }
+}
+
+img {
+    width: 100%;
+    max-width: 1200px;
+
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+//block
+@import "../scss/block/container.scss";
+@import "../scss/block/header.scss";
+@import "../scss/block/menu.scss";
+@import "../scss/block/signin.scss";
+@import "../scss/block/form.scss";
+@import "../scss/block/cataloge.scss";
+@import "../scss/block/sub-cataloge.scss";
+@import "../scss/block/intro.scss";
+@import "../scss/block/left-contant.scss";
+@import "../scss/block/right-contant.scss";
+@import "../scss/block/btn.scss";
+@import "../scss/block/btn.scss";
+@import "../scss/block/merchandise-category.scss";
+@import "../scss/block/goods.scss";
+@import "../scss/block/rating.scss";
+@import "../scss/block/news.scss";
+@import "../scss/block/articles.scss";
+@import "../scss/block/article.scss";
+@import "../scss/block/technical-card.scss";
+@import "../scss/block/footer.scss";
+@import "../scss/block/spoiler.scss";
+@import "../scss/block/swiper.scss";
+@import "../scss/block/burger.scss";
+@import "../scss/block/page.scss";
+@import "../scss/block/dropdown.scss";
+@import "../scss/block/select.scss";
+@import "../scss/block/products.scss";
+@import "../scss/block/goods-page.scss";
+@import "../scss/block/filter.scss";
+@import "../scss/nouislider.scss";
+@import "../scss/block/noUislider.scss";
+@import "../scss/block/checkboxs.scss";
+@import "../scss/block/prew.scss";
+@import "../scss/block/card-header.scss";
+@import "../scss/block/choose.scss";
+@import "../scss/block/card-body.scss";
+@import "../scss/block/lest-buy.scss";
+@import "../scss/block/quantity.scss";
+@import "../scss/block/tab.scss";
+@import "../scss/block/characteristic.scss";
+@import "../scss/block/select.scss";
+@import "../scss/block/reviews.scss";
+
+

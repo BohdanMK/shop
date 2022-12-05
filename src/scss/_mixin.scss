@@ -1,0 +1,12 @@
+@mixin text-medium {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $white;
+}
+
+@mixin breakpoint($br) {
+    @media (max-width: $br) {
+        @content;
+    }
+}

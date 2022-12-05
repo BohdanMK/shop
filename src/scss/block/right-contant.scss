@@ -1,0 +1,42 @@
+.right-contant__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+
+
+}
+
+.right-contant__img {
+    display: block;
+    width: 100%;
+    max-width: 423px;
+    height: auto;
+    padding-top: 2rem;
+    position: relative;
+    z-index: 3;
+
+    @include breakpoint($laptop-Low) {
+        max-width: 355px;
+    }
+}
+
+.right-contant__img-circle {
+        display: block;
+        width: 100%;
+        max-width: 360px;
+        height: 320px;
+        border: 2px solid #fff ;
+        border-radius: 50%;
+
+        position: absolute;
+        bottom: 7%;
+        left: 35%;
+        z-index: 2;
+
+        @include breakpoint($laptop-Low) {
+            max-width: 300px;
+            height: 270px;
+        }
+}

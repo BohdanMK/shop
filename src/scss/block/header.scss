@@ -1,0 +1,243 @@
+
+.header__top {
+    background: $main;
+    width: 100%;
+
+}
+
+.header__top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1.3rem 0;
+
+
+}
+
+.header__midlle {
+    padding: 1.25rem 0;
+}
+
+.header__midlle-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header__midlle-title {
+    max-width: 190px;
+    height: 43px;
+}
+
+.header__location-img,
+.header__rining-img {
+    width: 1.1rem;
+    height: 1.6rem;
+}
+
+.header__contact  {
+    display: flex;
+    column-gap: 2rem;
+}
+
+.header__location {
+    display: flex;
+    align-items: center;
+
+    & h3 {
+        margin-left: .5rem;
+
+        @include text-medium;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: $main;
+    }
+}
+
+.header__rining {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-right: 1.5rem;
+
+    position: relative;
+
+    @include breakpoint($laptop) {
+        display: none;
+    }
+
+
+
+    .header__rining-items {
+        display: block;
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+
+        transition: .2s linear;
+        box-shadow: 0 5px 5px #000;
+
+        background-color: darken($color: #fff, $amount: 5%);
+
+        & li:not(:last-child) {
+
+            margin-bottom: .2rem
+        }
+
+        & a {
+            @include text-medium;
+
+            padding-top: .2rem;
+
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+            font-weight: 700;
+            color: $main;
+            text-decoration: none;
+
+        }
+
+        &.see-all {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            top: 1.4rem;
+            z-index: 2;
+
+            height: auto;
+            opacity: 1;
+            visibility: visible;
+
+
+            padding-right: 2rem;
+            margin-right: -2rem;
+
+            text-align: center;
+            border-radius: 3px;
+        }
+    }
+
+
+    &-btn {
+        padding: 0 1rem 0 0;
+
+        font-size: 1.2rem;
+        font-weight: 700;
+        border: none;
+        background: transparent;
+        color: #E8AA31;
+
+        cursor: pointer;
+    }
+}
+
+.header__rining-link {
+    @include text-medium;
+            display: block;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: $main;
+            text-decoration: none;
+
+            padding: 0;
+}
+
+.header__rining-arrow {
+
+    position: absolute;
+    top: -3px;
+    right: 0;
+    z-index: 2;
+
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    transition: transform .1s ease-in-out;
+
+    &.to-up {
+        transform: rotateX(180deg);
+        top: -10px;
+    }
+}
+
+//Header__bactet
+
+.header__backet {
+    display: flex;
+    align-items: center;
+    column-gap: 1.8rem;
+    @include breakpoint($laptop-Low) {
+        column-gap: .6rem;
+    }
+    @include breakpoint($laptop) {
+        display: none;
+    }
+}
+
+.header__backet-favorite {
+    display: inline-block;
+}
+
+.header__backet-option {
+    width: 26px;
+    height: 28px;
+
+    position: relative;
+}
+
+.header__backet-count {
+    display: inline-flex;
+    width: 14px;
+    height: 14px;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #E8AA31;
+    border-radius: 50%;
+
+    position: absolute;
+    right: -5px;
+    top: -3px;
+
+    &::after {
+        content: "0";
+        display: block;
+
+        font-size: .5rem;
+    }
+}
+
+.header__backet-icon {
+    width: 26px;
+    height: 28px;
+}
+
+.header__backet-accept {
+    display: flex;
+    flex-direction: column;
+
+    & span {
+        font-size: 1rem;
+        color: #000;
+    }
+
+    & button {
+        padding: 0;
+
+        font-size: 1rem;
+        color: #E8AA31;
+
+        background: transparent;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            color: darken($color: #E8AA31, $amount: 10%);
+        }
+    }
+}

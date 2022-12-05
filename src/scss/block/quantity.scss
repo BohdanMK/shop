@@ -1,0 +1,38 @@
+.quantity {
+    width: 200px;
+    height: 50px;
+    display: flex;
+
+    &__minus, &__plus {
+        display: block;
+        width: 30%;
+
+        border: none;
+        background: $main;
+        @include text-medium;
+        color: $white;
+        font-size: 1.5rem;
+        font-weight: 500;
+
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+
+    &__value {
+        width: 40%;
+
+        @include text-medium;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $main;
+        text-align: center;
+
+        background: $white;
+        border: none;
+        outline: none;
+        resize: horizontal;
+    }
+}

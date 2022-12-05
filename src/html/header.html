@@ -1,0 +1,915 @@
+<header class="header">
+        <div class="header__top">
+            <div class="container">
+                    <div class="header__top-container">
+                        <div id="menuActive" class="menu-body">
+
+
+                            <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__iteam--cataloge">
+                                    <a data-move="nextMenu" class="menu__link" href="#">Каталог товаров </a><span>&#8250;</span>
+                                </li>
+                                <li class="menu__iteam">
+                                    <a class="menu__link" href="#">О нас</a>
+                                </li>
+                                <li class="menu__iteam">
+                                    <a class="menu__link" href="#">Оплата и доставка</a>
+                                </li>
+                                <li class="menu__iteam">
+                                    <a class="menu__link" href="#">Новости</a>
+                                </li>
+                                <li class="menu__iteam">
+                                    <a class="menu__link" href="#">Контакты</a>
+                                </li>
+                            </ul>
+                            </nav>
+                        </div>
+                    <div class="signin" >
+                        <ul class="signin__list">
+                            <li class="signin__item--laptop">
+                                <img class="signin__img" src="@img/headericon/phone.svg" alt="">
+                            <a  class="signin__link" href="#">
+                            Личный кабинет</a>
+                            </li>
+                            <li class="signin__item"><img class="signin__img" src="@img/headericon/sighinicon.svg" alt="">
+                            <a  class="signin__link" href="#">
+                            Личный кабинет</a></li>
+                            <li class="signin__item--laptop">
+                                <img class="signin__img" src="@img/headericon/hurt-white.svg" alt="">
+                            <a  class="signin__link" href="#">
+                            Личный кабинет</a>
+                            </li>
+                            <li class="signin__item--laptop">
+                                <div class="header__backet-option">
+                                    <a href="#">
+                                        <img class="header__backet-icon signin__img" src="img/headericon/backet-white.svg" alt="">
+                                    </a>
+                                    <span class="header__backet-count"></span>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <button data-burger="menuActive" type="button" class="burger">
+                        <span class="burger__span"></span>
+                    </button>
+                </div>
+            </div> <!--Container-->
+        </div> <!--Header__top-->
+        <!--Header__midlle-->
+        <div class="header__midlle">
+            <div class="container">
+                <div class="header__midlle-container">
+                    <a href="#">
+                        <img class="header__midlle-title" src="@img/headericon/logomainheader.svg" alt="">
+                    </a>
+
+
+                    <form class="form"  action="">
+                        <button class="form__btn" type="submit">
+                            <img src="@img/headericon/search.svg" alt="">
+                        </button>
+                        <input class="form__input" type="text" placeholder="Поиск">
+                    </form>
+
+
+                    <div class="header__contact">
+                        <div class="header__location">
+                            <img class="header__location-img" src="@img/headericon/location.svg" alt="">
+                            <h3>Київ</h3>
+                        </div>
+                        <div class="header__rining">
+                            <a class="header__rining-link" href="tel:88007774967">8-800-777-49-67</a>
+                            <ul class="header__rining-items" id="concactItem">
+                                <li>
+                                    <a href="tel:88007774967">8-800-777-49-67</a>
+                                </li>
+                                <li>
+                                    <a href="tel:88007774967">8-800-777-49-67</a>
+                                </li>
+                                <li>
+                                    <a href="tel:88007774967">8-800-777-49-67</a>
+                                </li>
+                            </ul>
+                            <button type="button" class="header__rining-btn">Заказать звонок</button>
+                            <button class="header__rining-arrow"  type="button" id="getListContact">
+                                <img class="header__rining-img" src="@img/headericon/arrowtobtm.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="header__backet">
+                            <a class="header__backet-favorite" href="#">
+                                <img class="header__backet-icon"  src="@img/headericon/hurt.svg" alt="">
+                            </a>
+
+                            <div class="header__backet-option" >
+                                <a href="#">
+                                    <img class="header__backet-icon" src="@img/headericon/backet.svg" alt="">
+                                </a>
+                                <span class="header__backet-count"></span>
+                            </div>
+                            <div class="header__backet-accept">
+                                <span>0 грн.</span>
+                                <button type="submit">
+                                    Оформить заказ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Header__bottom-->
+        <div class="header__bottom">
+            <!--cataloge-->
+            <div class="cataloge">
+                    <div class="cataloge__box">
+                        <!--cataloge__nav-->
+                        <nav id="nextMenu" class="cataloge__nav">
+                            <div class="container">
+                                <ul class="cataloge__list">
+                                    <li data-previos="nextMenu" class="cataloge__iteam--cataloge">
+                                        <span></span>
+                                        <button class="cataloge__link" type="button" data-openmenu="knife-menu"><span>&#8592;</span>  Назад</button>
+                                    </li>
+                                    <li class="cataloge__iteam">
+                                        <button class="cataloge__link" type="button" data-openmenu="knife-menu">Каталог ножей</button>
+                                    </li>
+                                    <li class="cataloge__iteam">
+                                        <button class="cataloge__link" href="#" data-openmenu="second-menu">Клинковое оружие</button>
+                                    </li>
+                                    <li class="cataloge__iteam">
+                                        <a class="cataloge__link" href="#">Сувенирные изделия</a>
+                                    </li>
+                                    <li class="cataloge__iteam">
+                                        <a class="cataloge__link" href="#">Фонари ARMYTEK</a>
+                                    </li>
+                                    <li class="cataloge__iteam">
+                                        <a class="cataloge__link" href="#">Сопуствующие товары</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--sub-cataloge-->
+                            <div class="sub-cataloge">
+                                <div class="container">
+                                    <div class="sub-cataloge__block" id="knife-menu">
+                                        <div class="sub-cataloge__nav">
+                                            <a class="sub-cataloge__name" href="cataloge-page.html">Производство ножей</a>
+                                            <a class="sub-cataloge__name" href="cataloge-page.html">Ножи по маркам стали</a>
+                                            <a class="sub-cataloge__name" href="cataloge-page.html">Заточка и полировка ножей</a>
+                                            <a class="sub-cataloge__name" href="cataloge-page.html">Заточка и полировка ножей</a>
+                                            <a class="sub-cataloge__name" href="cataloge-page.html">Заточка и полировка ножей</a>
+
+                                        </div>
+                                        <div class="sub-cataloge__column">
+
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="cataloge-page.html">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="cataloge-page.html">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="cataloge-page.html">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="cataloge-page.html">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="cataloge-page.html">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="cataloge-page.html">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="cataloge-page.html">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+
+
+
+
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__footer">
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__footer-->
+                                    </div><!--sub-cataloge__block-->
+
+                                    <div class="sub-cataloge__block" id="second-menu">
+                                        <div class="sub-cataloge__nav">
+                                            <a class="sub-cataloge__name" href="#">Производство ножей</a>
+                                            <a class="sub-cataloge__name" href="#">Ножи по маркам стали</a>
+
+                                        </div>
+                                        <div class="sub-cataloge__column">
+
+
+
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+
+
+
+
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__footer">
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+
+                                        </div> <!--sub-cataloge__footer-->
+                                    </div><!--sub-cataloge__block-->
+
+                                    <div class="sub-cataloge__block" id="second-menu">
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Категория ножей</a>
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Плуги</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all firsth" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Производство ножей</a>
+
+                                            <ul class="sub-cataloge__list">
+
+
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Ножи по маркам стали</a>
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Заточка и полировка ножей</a>
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Ножевая мастерская</a>
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                    </div><!--sub-cataloge__block-->
+
+                                    <div class="sub-cataloge__block" id="second-menu">
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Категория ножей</a>
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Плуги</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all firsth" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Производство ножей</a>
+
+                                            <ul class="sub-cataloge__list">
+
+
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Ножи по маркам стали</a>
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Заточка и полировка ножей</a>
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Ножевая мастерская</a>
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                    </div><!--sub-cataloge__block-->
+
+                                    <div class="sub-cataloge__block" id="second-menu">
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Категория ножей</a>
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Плуги</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all firsth" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Производство ножей</a>
+
+                                            <ul class="sub-cataloge__list">
+
+
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Ножи по маркам стали</a>
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Заточка и полировка ножей</a>
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Ножевая мастерская</a>
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                    </div><!--sub-cataloge__block-->
+                                </div>
+                            </div> <!--sub-cataloge-->
+                        </nav> <!--cataloge__nav-->
+                    </div> <!--cataloge__box-->
+
+            </div> <!--cataloge-->
+        </div>
+</header>

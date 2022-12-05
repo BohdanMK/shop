@@ -1,0 +1,135 @@
+
+.choose {
+    width: 100%;
+
+    margin-bottom: 1.2rem;
+
+    &__option {
+        display: flex;
+        align-items: center;
+
+        @include breakpoint($mobile) {
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: .5rem;
+        }
+    }
+
+    &__category {
+        width: 30%;
+
+        @include breakpoint($mobile) {
+            width: 100%;
+        }
+    }
+
+}
+
+.choose__dropdown {
+    width: 70%;
+
+    position: relative;
+    @include breakpoint($mobile) {
+        width: 100%;
+    }
+    &-head {
+        width: 100%;
+        max-width: 539px;
+        height: 40px;
+        display: flex;
+
+    }
+
+    &-input {
+        width: 90%;
+        height: 100%;
+
+        padding-left: .5rem;
+
+        @include text-medium;
+        color: $main;
+
+        border: none;
+        outline: none;
+        border-collapse: collapse;
+        border: 1px solid rgba($color: #141414, $alpha: .15);
+        border-radius: 3px 0 0 3px;
+
+        &::placeholder {
+            color: rgba($color: $main, $alpha: .5);
+        }
+
+    }
+
+
+    &-btn {
+        width: 10%;
+        height: 100%;
+        background: $main;
+        border: 1px solid rgba($color: #141414, $alpha: 1);
+        border-radius:0 3px 3px 0;
+        outline: none;
+
+        padding: 1rem;
+        margin: 0 auto;
+
+        position: relative;
+    }
+
+    &-img {
+        width: 1rem;
+        height: 1rem;
+
+        position: absolute;
+        top: 50%;
+        left: calc(50% - .5rem);
+        transform: translateY(-50%);
+    }
+
+    &-btn--see &-img {
+        margin-top: -15%;
+        transform: rotateX(180deg);
+    }
+
+    &-body {
+        display: none;
+        width: 100%;
+        padding: .8rem 0;
+        background: darken($color: #fff, $amount: 5%);
+        box-shadow: 0 2px 4px;
+
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 200;
+
+        &.choose__dropdown-body--see {
+            display: block;
+            max-width: 539px;
+        }
+    }
+
+    &-item {
+        padding: .6rem 0 .6rem 1.8rem;
+
+        @include text-medium;
+        color: $main;
+
+
+
+        &:hover {
+            background-color: $main;
+            color: $white;
+        }
+    }
+}
+
+
+
+.chooshe__name {
+    & h4 {
+        @include text-medium;
+        color: $main;
+        font-size: 1.1rem;
+    }
+}

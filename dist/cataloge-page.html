@@ -1,0 +1,2328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <title>Головна</title>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                    <div class="header__top-container">
+                        <div id="menuActive" class="menu-body">
+
+
+                            <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__iteam--cataloge">
+                                    <a data-move="nextMenu" class="menu__link" href="#">Каталог товаров </a><span>&#8250;</span>
+                                </li>
+                                <li class="menu__iteam">
+                                    <a class="menu__link" href="#">О нас</a>
+                                </li>
+                                <li class="menu__iteam">
+                                    <a class="menu__link" href="#">Оплата и доставка</a>
+                                </li>
+                                <li class="menu__iteam">
+                                    <a class="menu__link" href="#">Новости</a>
+                                </li>
+                                <li class="menu__iteam">
+                                    <a class="menu__link" href="#">Контакты</a>
+                                </li>
+                            </ul>
+                            </nav>
+                        </div>
+                    <div class="signin" >
+                        <ul class="signin__list">
+                            <li class="signin__item--laptop">
+                                <img class="signin__img" src="img/headericon/phone.svg" alt="">
+                            <a  class="signin__link" href="#">
+                            Личный кабинет</a>
+                            </li>
+                            <li class="signin__item"><img class="signin__img" src="img/headericon/sighinicon.svg" alt="">
+                            <a  class="signin__link" href="#">
+                            Личный кабинет</a></li>
+                            <li class="signin__item--laptop">
+                                <img class="signin__img" src="img/headericon/hurt-white.svg" alt="">
+                            <a  class="signin__link" href="#">
+                            Личный кабинет</a>
+                            </li>
+                            <li class="signin__item--laptop">
+                                <div class="header__backet-option">
+                                    <a href="#">
+                                        <img class="header__backet-icon signin__img" src="img/headericon/backet-white.svg" alt="">
+                                    </a>
+                                    <span class="header__backet-count"></span>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <button data-burger="menuActive" type="button" class="burger">
+                        <span class="burger__span"></span>
+                    </button>
+                </div>
+            </div> <!--Container-->
+        </div> <!--Header__top-->
+        <!--Header__midlle-->
+        <div class="header__midlle">
+            <div class="container">
+                <div class="header__midlle-container">
+                    <a href="#">
+                        <img class="header__midlle-title" src="img/headericon/logomainheader.svg" alt="">
+                    </a>
+
+
+                    <form class="form"  action="">
+                        <button class="form__btn" type="submit">
+                            <img src="img/headericon/search.svg" alt="">
+                        </button>
+                        <input class="form__input" type="text" placeholder="Поиск">
+                    </form>
+
+
+                    <div class="header__contact">
+                        <div class="header__location">
+                            <img class="header__location-img" src="img/headericon/location.svg" alt="">
+                            <h3>Київ</h3>
+                        </div>
+                        <div class="header__rining">
+                            <a class="header__rining-link" href="tel:88007774967">8-800-777-49-67</a>
+                            <ul class="header__rining-items" id="concactItem">
+                                <li>
+                                    <a href="tel:88007774967">8-800-777-49-67</a>
+                                </li>
+                                <li>
+                                    <a href="tel:88007774967">8-800-777-49-67</a>
+                                </li>
+                                <li>
+                                    <a href="tel:88007774967">8-800-777-49-67</a>
+                                </li>
+                            </ul>
+                            <button type="button" class="header__rining-btn">Заказать звонок</button>
+                            <button class="header__rining-arrow"  type="button" id="getListContact">
+                                <img class="header__rining-img" src="img/headericon/arrowtobtm.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="header__backet">
+                            <a class="header__backet-favorite" href="#">
+                                <img class="header__backet-icon"  src="img/headericon/hurt.svg" alt="">
+                            </a>
+
+                            <div class="header__backet-option" >
+                                <a href="#">
+                                    <img class="header__backet-icon" src="img/headericon/backet.svg" alt="">
+                                </a>
+                                <span class="header__backet-count"></span>
+                            </div>
+                            <div class="header__backet-accept">
+                                <span>0 грн.</span>
+                                <button type="submit">
+                                    Оформить заказ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Header__bottom-->
+        <div class="header__bottom">
+            <!--cataloge-->
+            <div class="cataloge">
+                    <div class="cataloge__box">
+                        <!--cataloge__nav-->
+                        <nav id="nextMenu" class="cataloge__nav">
+                            <div class="container">
+                                <ul class="cataloge__list">
+                                    <li data-previos="nextMenu" class="cataloge__iteam--cataloge">
+                                        <span></span>
+                                        <button class="cataloge__link" type="button" data-openmenu="knife-menu"><span>&#8592;</span>  Назад</button>
+                                    </li>
+                                    <li class="cataloge__iteam">
+                                        <button class="cataloge__link" type="button" data-openmenu="knife-menu">Каталог ножей</button>
+                                    </li>
+                                    <li class="cataloge__iteam">
+                                        <button class="cataloge__link" href="#" data-openmenu="second-menu">Клинковое оружие</button>
+                                    </li>
+                                    <li class="cataloge__iteam">
+                                        <a class="cataloge__link" href="#">Сувенирные изделия</a>
+                                    </li>
+                                    <li class="cataloge__iteam">
+                                        <a class="cataloge__link" href="#">Фонари ARMYTEK</a>
+                                    </li>
+                                    <li class="cataloge__iteam">
+                                        <a class="cataloge__link" href="#">Сопуствующие товары</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--sub-cataloge-->
+                            <div class="sub-cataloge">
+                                <div class="container">
+                                    <div class="sub-cataloge__block" id="knife-menu">
+                                        <div class="sub-cataloge__nav">
+                                            <a class="sub-cataloge__name" href="cataloge-page.html">Производство ножей</a>
+                                            <a class="sub-cataloge__name" href="cataloge-page.html">Ножи по маркам стали</a>
+                                            <a class="sub-cataloge__name" href="cataloge-page.html">Заточка и полировка ножей</a>
+                                            <a class="sub-cataloge__name" href="cataloge-page.html">Заточка и полировка ножей</a>
+                                            <a class="sub-cataloge__name" href="cataloge-page.html">Заточка и полировка ножей</a>
+
+                                        </div>
+                                        <div class="sub-cataloge__column">
+
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="cataloge-page.html">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="cataloge-page.html">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="cataloge-page.html">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="cataloge-page.html">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="cataloge-page.html">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="cataloge-page.html">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="cataloge-page.html">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+
+
+
+
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__footer">
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__footer-->
+                                    </div><!--sub-cataloge__block-->
+
+                                    <div class="sub-cataloge__block" id="second-menu">
+                                        <div class="sub-cataloge__nav">
+                                            <a class="sub-cataloge__name" href="#">Производство ножей</a>
+                                            <a class="sub-cataloge__name" href="#">Ножи по маркам стали</a>
+
+                                        </div>
+                                        <div class="sub-cataloge__column">
+
+
+
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+
+
+
+
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__footer">
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+
+                                        </div> <!--sub-cataloge__footer-->
+                                    </div><!--sub-cataloge__block-->
+
+                                    <div class="sub-cataloge__block" id="second-menu">
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Категория ножей</a>
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Плуги</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all firsth" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Производство ножей</a>
+
+                                            <ul class="sub-cataloge__list">
+
+
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Ножи по маркам стали</a>
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Заточка и полировка ножей</a>
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Ножевая мастерская</a>
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                    </div><!--sub-cataloge__block-->
+
+                                    <div class="sub-cataloge__block" id="second-menu">
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Категория ножей</a>
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Плуги</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all firsth" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Производство ножей</a>
+
+                                            <ul class="sub-cataloge__list">
+
+
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Ножи по маркам стали</a>
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Заточка и полировка ножей</a>
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Ножевая мастерская</a>
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                    </div><!--sub-cataloge__block-->
+
+                                    <div class="sub-cataloge__block" id="second-menu">
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Категория ножей</a>
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Плуги</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all firsth" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Производство ножей</a>
+
+                                            <ul class="sub-cataloge__list">
+
+
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Ножи по маркам стали</a>
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Заточка и полировка ножей</a>
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                        <div class="sub-cataloge__column">
+                                            <a class="sub-cataloge__name" href="#">Ножевая мастерская</a>
+
+                                            <ul class="sub-cataloge__list">
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Разделочные ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                                <li class="sub-cataloge__item">
+                                                    <a class="sub-cataloge__link" href="#">Туристические ножи</a>
+                                                </li>
+                                            </ul>
+                                            <a class="sub-cataloge__see-all" href="#">Смотреть все</a>
+                                        </div> <!--sub-cataloge__column-->
+                                    </div><!--sub-cataloge__block-->
+                                </div>
+                            </div> <!--sub-cataloge-->
+                        </nav> <!--cataloge__nav-->
+                    </div> <!--cataloge__box-->
+
+            </div> <!--cataloge-->
+        </div>
+</header>
+    <!--select-->
+    <section class="page">
+        <div class="container">
+            <div class="page__container">
+                <h1 class="page__title">Разделочные ножи</h1>
+                <nav class="page__nav">
+                    <ul class="page__list">
+                        <li class="page__item">
+                            <a class="page__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="page__item">
+                            <span href="">Разделочные ножи</span>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="dropdown-form">
+                        <h3 class="dropdown-form__title" class="">Виберить категорію</h3>
+
+                        <div class="dropdown">
+                            <button class="dropdown__btn">По популярности</button>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item" data-value="popular">
+                                    По популярності
+                                </li>
+                                <li class="dropdown__item" data-value="price">
+                                    По ціні
+                                </li>
+                                <li class="dropdown__item" data-value="producer">
+                                    По виробниках
+                                </li>
+                                <li class="dropdown__item" data-value="materials">
+                                    По матеріалам
+                                </li>
+                            </ul>
+                            <input type="text" class="dropdown__input" placeholder="gi">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="goods-page">
+    <div class="container">
+        <div class="products">
+            <div class="products__filters">
+                <div class="products__filters--title">
+                    <button class="products__filters-btn">Фильтр товаров</button>
+                </div>
+                <div class="filter">
+                    <div class="filter__spoiler">
+                        <button data-filerShow="price" class="filter__spoiler-btn" type="button">Цена               <span class="filter__spoiler-btn-arrow">⮟</span>
+                        </button>
+                        <div id="price" class="filter__spoiler-content">
+                            <div class="filter__spoiler-input">
+                                <label class="filter__spoiler-label">
+                                    <span class="filter__spoiler-text">від</span>
+                                    <input id="rangeInput-0" class="filter__input" min="1" max="99999" placeholder="1"
+                                    type="number">
+                                    <span class="filter__spoiler-text">&#8372;</span>
+                                </label>
+                                <label class="filter__spoiler-label">
+                                    <span class="filter__spoiler-text">до</span>
+                                    <input id="rangeInput-1" class="filter__input" min="1" max="999999" placeholder="999999" type="number">
+                                    <span class="filter__spoiler-text">&#8372;</span>
+                                </label>
+
+                            </div>
+
+                            <div class="filter__slider-box" id="slider-filter">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter__spoiler">
+                        <button data-filerShow="produce" class="filter__spoiler-btn" type="button">Производство
+                            <span class="filter__spoiler-btn-arrow">⮟</span>
+                        </button>
+                        <div id="produce" class="filter__spoiler-content">
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="inputCheck_2" class="checkboxs__label" for="">
+                                    <input id="inputCheck_2"  class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    АиР <small class="checkboxs__number">(250)</small>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="inputCheck_3" class="checkboxs__label" for="">
+                                    <input id="inputCheck_3" class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    Булат Сергея Баранова <small class="checkboxs__number">(25)</small>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="inputCheck" class="checkboxs__label" for="">
+                                    <input id="inputCheck" class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    Булат Умерова <small class="checkboxs__number">(265)</small>
+                                </label>
+                            </div>
+
+                             <!--Checkboxs-->
+                             <div class="checkboxs">
+                                <label for="inputCheck_4" class="checkboxs__label" for="">
+                                    <input id="inputCheck_4"  class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    АиР <small class="checkboxs__number">(250)</small>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="inputCheck_5" class="checkboxs__label" for="">
+                                    <input id="inputCheck_5" class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    Булат Сергея Баранова <small class="checkboxs__number">(25)</small>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="inputCheck_6" class="checkboxs__label" for="">
+                                    <input id="inputCheck_6" class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    Булат Умерова <small class="checkboxs__number">(265)</small>
+                                </label>
+                            </div>
+
+                             <!--Checkboxs-->
+                             <div class="checkboxs">
+                                <label for="inputCheck_7" class="checkboxs__label" for="">
+                                    <input id="inputCheck_7"  class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    АиР <small class="checkboxs__number">(250)</small>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="inputCheck_8" class="checkboxs__label" for="">
+                                    <input id="inputCheck_8" class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    Булат Сергея Баранова <small class="checkboxs__number">(25)</small>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="inputCheck_9" class="checkboxs__label" for="">
+                                    <input id="inputCheck_9" class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    Булат Умерова <small class="checkboxs__number">(265)</small>
+                                </label>
+                            </div>
+
+                             <!--Checkboxs-->
+                             <div class="checkboxs">
+                                <label for="inputCheck_10" class="checkboxs__label" for="">
+                                    <input id="inputCheck_10"  class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    АиР <small class="checkboxs__number">(250)</small>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="inputCheck_11" class="checkboxs__label" for="">
+                                    <input id="inputCheck_11" class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    Булат Сергея Баранова <small class="checkboxs__number">(25)</small>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="inputCheck_12" class="checkboxs__label" for="">
+                                    <input id="inputCheck_12" class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    Булат Умерова <small class="checkboxs__number">(265)</small>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter__spoiler">
+                        <button data-filerShow="still" class="filter__spoiler-btn" type="button">Сталь
+                            <span class="filter__spoiler-btn-arrow">⮟</span>
+                        </button>
+                        <div id="still" class="filter__spoiler-content">
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="still-inputCheck_2" class="checkboxs__label" for="">
+                                    <input id="still-inputCheck_2"  class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    АиР <small class="checkboxs__number">(250)</small>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="still-inputCheck_3" class="checkboxs__label" for="">
+                                    <input id="still-inputCheck_3" class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    Булат Сергея Баранова <small class="checkboxs__number">(25)</small>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="still-inputCheck" class="checkboxs__label" for="">
+                                    <input id="still-inputCheck" class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    Булат Умерова <small class="checkboxs__number">(265)</small>
+                                </label>
+                            </div>
+
+                             <!--Checkboxs-->
+                             <div class="checkboxs">
+                                <label for="still-inputCheck_4" class="checkboxs__label" for="">
+                                    <input id="still-inputCheck_4"  class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    АиР <small class="checkboxs__number">(250)</small>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="still-inputCheck_5" class="checkboxs__label" for="">
+                                    <input id="still-inputCheck_5" class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    Булат Сергея Баранова <small class="checkboxs__number">(25)</small>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="still-inputCheck_6" class="checkboxs__label" for="">
+                                    <input id="still-inputCheck_6" class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    Булат Умерова <small class="checkboxs__number">(265)</small>
+                                </label>
+                            </div>
+
+                             <!--Checkboxs-->
+                             <div class="checkboxs">
+                                <label for="still-inputCheck_7" class="checkboxs__label" for="">
+                                    <input id="still-inputCheck_7"  class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    АиР <small class="checkboxs__number">(250)</small>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="still-inputCheck_8" class="checkboxs__label" for="">
+                                    <input id="still-inputCheck_8" class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    Булат Сергея Баранова <small class="checkboxs__number">(25)</small>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="still-inputCheck_9" class="checkboxs__label" for="">
+                                    <input id="still-inputCheck_9" class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    Булат Умерова <small class="checkboxs__number">(265)</small>
+                                </label>
+                            </div>
+
+                             <!--Checkboxs-->
+                             <div class="checkboxs">
+                                <label for="still-inputCheck_10" class="checkboxs__label" for="">
+                                    <input id="still-inputCheck_10"  class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    АиР <small class="checkboxs__number">(250)</small>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="still-inputCheck_11" class="checkboxs__label" for="">
+                                    <input id="still-inputCheck_11" class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    Булат Сергея Баранова <small class="checkboxs__number">(25)</small>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="still-inputCheck_12" class="checkboxs__label" for="">
+                                    <input id="still-inputCheck_12" class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    Булат Умерова <small class="checkboxs__number">(265)</small>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter__spoiler">
+                        <button data-filerShow="hand" class="filter__spoiler-btn" type="button">Рукоять
+                            <span class="filter__spoiler-btn-arrow">⮟</span>
+                        </button>
+                        <div id="hand" class="filter__spoiler-content">
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="hand-inputCheck_2" class="checkboxs__label" for="">
+                                    <input id="hand-inputCheck_2"  class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    АиР <small class="checkboxs__number">(250)</small>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="hand-inputCheck_3" class="checkboxs__label" for="">
+                                    <input id="hand-inputCheck_3" class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    Булат Сергея Баранова <small class="checkboxs__number">(25)</small>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="hand-inputCheck" class="checkboxs__label" for="">
+                                    <input id="hand-inputCheck" class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    Булат Умерова <small class="checkboxs__number">(265)</small>
+                                </label>
+                            </div>
+
+                             <!--Checkboxs-->
+                             <div class="checkboxs">
+                                <label for="hand-inputCheck_4" class="checkboxs__label" for="">
+                                    <input id="hand-inputCheck_4"  class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    АиР <small class="checkboxs__number">(250)</small>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="hand-inputCheck_5" class="checkboxs__label" for="">
+                                    <input id="hand-inputCheck_5" class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    Булат Сергея Баранова <small class="checkboxs__number">(25)</small>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="hand-inputCheck_6" class="checkboxs__label" for="">
+                                    <input id="hand-inputCheck_6" class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    Булат Умерова <small class="checkboxs__number">(265)</small>
+                                </label>
+                            </div>
+
+                             <!--Checkboxs-->
+                             <div class="checkboxs">
+                                <label for="hand-inputCheck_7" class="checkboxs__label" for="">
+                                    <input id="hand-inputCheck_7"  class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    АиР <small class="checkboxs__number">(250)</small>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="hand-inputCheck_8" class="checkboxs__label" for="">
+                                    <input id="hand-inputCheck_8" class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    Булат Сергея Баранова <small class="checkboxs__number">(25)</small>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="hand-inputCheck_9" class="checkboxs__label" for="">
+                                    <input id="hand-inputCheck_9" class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    Булат Умерова <small class="checkboxs__number">(265)</small>
+                                </label>
+                            </div>
+
+                             <!--Checkboxs-->
+                             <div class="checkboxs">
+                                <label for="hand-inputCheck_10" class="checkboxs__label" for="">
+                                    <input id="hand-inputCheck_10"  class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    АиР <small class="checkboxs__number">(250)</small>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="hand-inputCheck_11" class="checkboxs__label" for="">
+                                    <input id="hand-inputCheck_11" class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    Булат Сергея Баранова <small class="checkboxs__number">(25)</small>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="hand-inputCheck_12" class="checkboxs__label" for="">
+                                    <input id="hand-inputCheck_12" class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    Булат Умерова <small class="checkboxs__number">(265)</small>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__spoiler">
+                        <button data-filerShow="how-long" class="filter__spoiler-btn" type="button">Общая длина, мм              <span class="filter__spoiler-btn-arrow">⮟</span>
+                        </button>
+                        <div id="how-long" class="filter__spoiler-content">
+                            <div class="filter__spoiler-input">
+                                <label class="filter__spoiler-label">
+                                    <span class="filter__spoiler-text">від</span>
+                                    <input id="rangeInput-long-0" class="filter__input" min="1" max="10000" placeholder="10"
+                                    type="number">
+                                    <span class="filter__spoiler-text">мм</span>
+                                </label>
+                                <label class="filter__spoiler-label">
+                                    <span class="filter__spoiler-text">до</span>
+                                    <input id="rangeInput-long-1" class="filter__input" min="1" max="10000" placeholder="10000" type="number">
+                                    <span class="filter__spoiler-text">мм</span>
+                                </label>
+
+                            </div>
+
+                            <div class="filter__slider-box" id="slider-filter-socond">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__spoiler">
+                        <button data-filerShow="how-width" class="filter__spoiler-btn" type="button">Ширина клинка, мм              <span class="filter__spoiler-btn-arrow">⮟</span>
+                        </button>
+                        <div id="how-width" class="filter__spoiler-content">
+                            <div class="filter__spoiler-input">
+                                <label class="filter__spoiler-label">
+                                    <span class="filter__spoiler-text">від</span>
+                                    <input id="width-rangeInput-0" class="filter__input" min="1" max="10000" placeholder="1"
+                                    type="number">
+                                </label>
+                                <label class="filter__spoiler-label">
+                                    <span class="filter__spoiler-text">до</span>
+                                    <input id="width-rangeInput-1" class="filter__input" min="1" max="10000" placeholder="10000" type="number">
+                                </label>
+
+                            </div>
+
+                            <div class="filter__slider-box" id="slider-filter-third">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__spoiler">
+                        <button data-filerShow="rating" class="filter__spoiler-btn" type="button">Рейтинг
+                            <span class="filter__spoiler-btn-arrow">⮟</span>
+                        </button>
+                        <div id="rating" class="filter__spoiler-content">
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="rating-inputCheck_5" class="checkboxs__label checkboxs__label-rating" for="">
+                                    <input id="rating-inputCheck_5"  class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    ★ ★ ★ ★ ★
+                                    <span>5/5</span>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="rating-inputCheck_4" class="checkboxs__label checkboxs__label-rating" for="">
+                                    <input id="rating-inputCheck_4"  class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    ★ ★ ★ ★
+                                    <span>4/5</span>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="rating-inputCheck_3" class="checkboxs__label checkboxs__label-rating" for="">
+                                    <input id="rating-inputCheck_3"  class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    ★ ★ ★
+                                    <span>3/5</span>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="rating-inputCheck_2" class="checkboxs__label checkboxs__label-rating" for="">
+                                    <input id="rating-inputCheck_2"  class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    ★ ★
+                                    <span>2/5</span>
+                                </label>
+                            </div>
+
+                            <!--Checkboxs-->
+                            <div class="checkboxs">
+                                <label for="rating-inputCheck_1" class="checkboxs__label checkboxs__label-rating" for="">
+                                    <input id="rating-inputCheck_1"  class="checkboxs__input" type="checkbox">
+                                    <span class="checkboxs__custom"></span>
+                                    ★
+                                    <span>1/5</span>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="products__examples">
+                <!--Goods-card-->
+                <div class="goods__card">
+                    <div class="goods__body">
+                        <div class="goods__item">
+                            <div class="goods__picture">
+                                <a href="">
+                                    <img src="img/goods-img/knife.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="goods__contant">
+                                <h3 class="goods__contant-title">
+                                    <a href="">
+                                        Нож Лиса
+                                    </a>
+                                </h3>
+                                <div class="goods__contant-info">
+                                    <div class="goods__contant-weight">95х18</div>
+                                    <div class="goods__contant-descroption">Оре</div>
+                                </div>
+                                <div class="rating">
+                                    <div class="rating__body">
+                                        <div class="rating__active"></div>
+                                        <div class="rating__items">
+                                            <input class="rating__item" type="radio" value="1" name="rating">
+                                            <input class="rating__item" type="radio" value="2" name="rating">
+                                            <input class="rating__item" type="radio" value="3" name="rating">
+                                            <input class="rating__item" type="radio" value="4" name="rating">
+                                            <input class="rating__item" type="radio" value="5" name="rating">
+                                        </div>
+                                    </div>
+                                    <div class="rating__comment">
+                                        <a href=""> <span>12</span>  отзывов</a>
+                                    </div>
+                                </div>
+                                <div class="goods__price">
+                                    <div class="goods__cost">
+                                    2719
+                                    <span>
+                                    &#8372</span>
+                                    </div>
+                                    <div class="goods__icon">
+                                        <a href="">
+                                            <img src="img/goods-img/2.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img src="img/goods-img/favorite.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="goods__item-footer">
+                                <button class="btn btn--card">В корзину
+                                    <span><img src="img/goods-img/backet.png" alt=""></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods__card-promotion active">-50%</div>
+                </div>
+                <!--Goods-card-->
+                <div class="goods__card">
+                    <div class="goods__body">
+                        <div class="goods__item">
+                            <div class="goods__picture">
+                                <a href="card-goods.html">
+                                    <img src="img/goods-img/knife.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="goods__contant">
+                                <h3 class="goods__contant-title">
+                                    <a href="">
+                                        Нож Лиса
+                                    </a>
+                                </h3>
+                                <div class="goods__contant-info">
+                                    <div class="goods__contant-weight">95х18</div>
+                                    <div class="goods__contant-descroption">Оре</div>
+                                </div>
+                                <div class="rating">
+                                    <div class="rating__body">
+                                        <div class="rating__active"></div>
+                                        <div class="rating__items">
+                                            <input class="rating__item" type="radio" value="1" name="rating">
+                                            <input class="rating__item" type="radio" value="2" name="rating">
+                                            <input class="rating__item" type="radio" value="3" name="rating">
+                                            <input class="rating__item" type="radio" value="4" name="rating">
+                                            <input class="rating__item" type="radio" value="5" name="rating">
+                                        </div>
+                                    </div>
+                                    <div class="rating__comment">
+                                        <a href=""> <span>12</span>  отзывов</a>
+                                    </div>
+                                </div>
+                                <div class="goods__price">
+                                    <div class="goods__cost">
+                                    2719
+                                    <span>
+                                    &#8372</span>
+                                    </div>
+                                    <div class="goods__icon">
+                                        <a href="">
+                                            <img src="img/goods-img/2.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img src="img/goods-img/favorite.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="goods__item-footer">
+                                <button class="btn btn--card">В корзину
+                                    <span><img src="img/goods-img/backet.png" alt=""></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods__card-promotion">-50%</div>
+                </div>
+                <!--Goods-card-->
+                <div class="goods__card">
+                    <div class="goods__body">
+                        <div class="goods__item">
+                            <div class="goods__picture">
+                                <a href="card-goods.html">
+                                    <img src="img/goods-img/knife.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="goods__contant">
+                                <h3 class="goods__contant-title">
+                                    <a href="">
+                                        Нож Лиса
+                                    </a>
+                                </h3>
+                                <div class="goods__contant-info">
+                                    <div class="goods__contant-weight">95х18</div>
+                                    <div class="goods__contant-descroption">Оре</div>
+                                </div>
+                                <div class="rating">
+                                    <div class="rating__body">
+                                        <div class="rating__active"></div>
+                                        <div class="rating__items">
+                                            <input class="rating__item" type="radio" value="1" name="rating">
+                                            <input class="rating__item" type="radio" value="2" name="rating">
+                                            <input class="rating__item" type="radio" value="3" name="rating">
+                                            <input class="rating__item" type="radio" value="4" name="rating">
+                                            <input class="rating__item" type="radio" value="5" name="rating">
+                                        </div>
+                                    </div>
+                                    <div class="rating__comment">
+                                        <a href=""> <span>12</span>  отзывов</a>
+                                    </div>
+                                </div>
+                                <div class="goods__price">
+                                    <div class="goods__cost">
+                                    2719
+                                    <span>
+                                    &#8372</span>
+                                    </div>
+                                    <div class="goods__icon">
+                                        <a href="">
+                                            <img src="img/goods-img/2.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img src="img/goods-img/favorite.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="goods__item-footer">
+                                <button class="btn btn--card">В корзину
+                                    <span><img src="img/goods-img/backet.png" alt=""></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods__card-promotion">-50%</div>
+                </div>
+                <!--Goods-card-->
+                <div class="goods__card">
+                    <div class="goods__body">
+                        <div class="goods__item">
+                            <div class="goods__picture">
+                                <a href="card-goods.html">
+                                    <img src="img/goods-img/knife.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="goods__contant">
+                                <h3 class="goods__contant-title">
+                                    <a href="">
+                                        Нож Лиса
+                                    </a>
+                                </h3>
+                                <div class="goods__contant-info">
+                                    <div class="goods__contant-weight">95х18</div>
+                                    <div class="goods__contant-descroption">Оре</div>
+                                </div>
+                                <div class="rating">
+                                    <div class="rating__body">
+                                        <div class="rating__active"></div>
+                                        <div class="rating__items">
+                                            <input class="rating__item" type="radio" value="1" name="rating">
+                                            <input class="rating__item" type="radio" value="2" name="rating">
+                                            <input class="rating__item" type="radio" value="3" name="rating">
+                                            <input class="rating__item" type="radio" value="4" name="rating">
+                                            <input class="rating__item" type="radio" value="5" name="rating">
+                                        </div>
+                                    </div>
+                                    <div class="rating__comment">
+                                        <a href=""> <span>12</span>  отзывов</a>
+                                    </div>
+                                </div>
+                                <div class="goods__price">
+                                    <div class="goods__cost">
+                                    2719
+                                    <span>
+                                    &#8372</span>
+                                    </div>
+                                    <div class="goods__icon">
+                                        <a href="">
+                                            <img src="img/goods-img/2.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img src="img/goods-img/favorite.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="goods__item-footer">
+                                <button class="btn btn--card">В корзину
+                                    <span><img src="img/goods-img/backet.png" alt=""></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods__card-promotion">-50%</div>
+                </div>
+                <!--Goods-card-->
+                <div class="goods__card">
+                    <div class="goods__body">
+                        <div class="goods__item">
+                            <div class="goods__picture">
+                                <a href="card-goods.html">
+                                    <img src="img/goods-img/knife.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="goods__contant">
+                                <h3 class="goods__contant-title">
+                                    <a href="">
+                                        Нож Лиса
+                                    </a>
+                                </h3>
+                                <div class="goods__contant-info">
+                                    <div class="goods__contant-weight">95х18</div>
+                                    <div class="goods__contant-descroption">Оре</div>
+                                </div>
+                                <div class="rating">
+                                    <div class="rating__body">
+                                        <div class="rating__active"></div>
+                                        <div class="rating__items">
+                                            <input class="rating__item" type="radio" value="1" name="rating">
+                                            <input class="rating__item" type="radio" value="2" name="rating">
+                                            <input class="rating__item" type="radio" value="3" name="rating">
+                                            <input class="rating__item" type="radio" value="4" name="rating">
+                                            <input class="rating__item" type="radio" value="5" name="rating">
+                                        </div>
+                                    </div>
+                                    <div class="rating__comment">
+                                        <a href=""> <span>12</span>  отзывов</a>
+                                    </div>
+                                </div>
+                                <div class="goods__price">
+                                    <div class="goods__cost">
+                                    2719
+                                    <span>
+                                    &#8372</span>
+                                    </div>
+                                    <div class="goods__icon">
+                                        <a href="">
+                                            <img src="img/goods-img/2.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img src="img/goods-img/favorite.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="goods__item-footer">
+                                <button class="btn btn--card">В корзину
+                                    <span><img src="img/goods-img/backet.png" alt=""></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods__card-promotion">-50%</div>
+                </div>
+                <!--Goods-card-->
+                <div class="goods__card">
+                    <div class="goods__body">
+                        <div class="goods__item">
+                            <div class="goods__picture">
+                                <a href="card-goods.html">
+                                    <img src="img/goods-img/knife.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="goods__contant">
+                                <h3 class="goods__contant-title">
+                                    <a href="">
+                                        Нож Лиса
+                                    </a>
+                                </h3>
+                                <div class="goods__contant-info">
+                                    <div class="goods__contant-weight">95х18</div>
+                                    <div class="goods__contant-descroption">Оре</div>
+                                </div>
+                                <div class="rating">
+                                    <div class="rating__body">
+                                        <div class="rating__active"></div>
+                                        <div class="rating__items">
+                                            <input class="rating__item" type="radio" value="1" name="rating">
+                                            <input class="rating__item" type="radio" value="2" name="rating">
+                                            <input class="rating__item" type="radio" value="3" name="rating">
+                                            <input class="rating__item" type="radio" value="4" name="rating">
+                                            <input class="rating__item" type="radio" value="5" name="rating">
+                                        </div>
+                                    </div>
+                                    <div class="rating__comment">
+                                        <a href=""> <span>12</span>  отзывов</a>
+                                    </div>
+                                </div>
+                                <div class="goods__price">
+                                    <div class="goods__cost">
+                                    2719
+                                    <span>
+                                    &#8372</span>
+                                    </div>
+                                    <div class="goods__icon">
+                                        <a href="">
+                                            <img src="img/goods-img/2.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img src="img/goods-img/favorite.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="goods__item-footer">
+                                <button class="btn btn--card">В корзину
+                                    <span><img src="img/goods-img/backet.png" alt=""></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods__card-promotion">-50%</div>
+                </div>
+                <!--Goods-card-->
+                <div class="goods__card">
+                    <div class="goods__body">
+                        <div class="goods__item">
+                            <div class="goods__picture">
+                                <a href="card-goods.html">
+                                    <img src="img/goods-img/knife.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="goods__contant">
+                                <h3 class="goods__contant-title">
+                                    <a href="../cataloge-page.html">
+                                        Нож Лиса
+                                    </a>
+                                </h3>
+                                <div class="goods__contant-info">
+                                    <div class="goods__contant-weight">95х18</div>
+                                    <div class="goods__contant-descroption">Оре</div>
+                                </div>
+                                <div class="rating">
+                                    <div class="rating__body">
+                                        <div class="rating__active"></div>
+                                        <div class="rating__items">
+                                            <input class="rating__item" type="radio" value="1" name="rating">
+                                            <input class="rating__item" type="radio" value="2" name="rating">
+                                            <input class="rating__item" type="radio" value="3" name="rating">
+                                            <input class="rating__item" type="radio" value="4" name="rating">
+                                            <input class="rating__item" type="radio" value="5" name="rating">
+                                        </div>
+                                    </div>
+                                    <div class="rating__comment">
+                                        <a href="card-goods.html"> <span>12</span>  отзывов</a>
+                                    </div>
+                                </div>
+                                <div class="goods__price">
+                                    <div class="goods__cost">
+                                    2719
+                                    <span>
+                                    &#8372</span>
+                                    </div>
+                                    <div class="goods__icon">
+                                        <a href="">
+                                            <img src="img/goods-img/2.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img src="img/goods-img/favorite.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="goods__item-footer">
+                                <button class="btn btn--card">В корзину
+                                    <span><img src="img/goods-img/backet.png" alt=""></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods__card-promotion">-50%</div>
+                </div>
+                <!--Goods-card-->
+                <div class="goods__card">
+                    <div class="goods__body">
+                        <div class="goods__item">
+                            <div class="goods__picture">
+                                <a href="">
+                                    <img src="img/goods-img/knife.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="goods__contant">
+                                <h3 class="goods__contant-title">
+                                    <a href="">
+                                        Нож Лиса
+                                    </a>
+                                </h3>
+                                <div class="goods__contant-info">
+                                    <div class="goods__contant-weight">95х18</div>
+                                    <div class="goods__contant-descroption">Оре</div>
+                                </div>
+                                <div class="rating">
+                                    <div class="rating__body">
+                                        <div class="rating__active"></div>
+                                        <div class="rating__items">
+                                            <input class="rating__item" type="radio" value="1" name="rating">
+                                            <input class="rating__item" type="radio" value="2" name="rating">
+                                            <input class="rating__item" type="radio" value="3" name="rating">
+                                            <input class="rating__item" type="radio" value="4" name="rating">
+                                            <input class="rating__item" type="radio" value="5" name="rating">
+                                        </div>
+                                    </div>
+                                    <div class="rating__comment">
+                                        <a href=""> <span>12</span>  отзывов</a>
+                                    </div>
+                                </div>
+                                <div class="goods__price">
+                                    <div class="goods__cost">
+                                    2719
+                                    <span>
+                                    &#8372</span>
+                                    </div>
+                                    <div class="goods__icon">
+                                        <a href="">
+                                            <img src="img/goods-img/2.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img src="img/goods-img/favorite.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="goods__item-footer">
+                                <button class="btn btn--card">В корзину
+                                    <span><img src="img/goods-img/backet.png" alt=""></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods__card-promotion active">-50%</div>
+                </div>
+                <!--Goods-card-->
+                <div class="goods__card">
+                    <div class="goods__body">
+                        <div class="goods__item">
+                            <div class="goods__picture">
+                                <a href="">
+                                    <img src="img/goods-img/knife.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="goods__contant">
+                                <h3 class="goods__contant-title">
+                                    <a href="">
+                                        Нож Лиса
+                                    </a>
+                                </h3>
+                                <div class="goods__contant-info">
+                                    <div class="goods__contant-weight">95х18</div>
+                                    <div class="goods__contant-descroption">Оре</div>
+                                </div>
+                                <div class="rating">
+                                    <div class="rating__body">
+                                        <div class="rating__active"></div>
+                                        <div class="rating__items">
+                                            <input class="rating__item" type="radio" value="1" name="rating">
+                                            <input class="rating__item" type="radio" value="2" name="rating">
+                                            <input class="rating__item" type="radio" value="3" name="rating">
+                                            <input class="rating__item" type="radio" value="4" name="rating">
+                                            <input class="rating__item" type="radio" value="5" name="rating">
+                                        </div>
+                                    </div>
+                                    <div class="rating__comment">
+                                        <a href=""> <span>12</span>  отзывов</a>
+                                    </div>
+                                </div>
+                                <div class="goods__price">
+                                    <div class="goods__cost">
+                                    2719
+                                    <span>
+                                    &#8372</span>
+                                    </div>
+                                    <div class="goods__icon">
+                                        <a href="">
+                                            <img src="img/goods-img/2.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img src="img/goods-img/favorite.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="goods__item-footer">
+                                <button class="btn btn--card">В корзину
+                                    <span><img src="img/goods-img/backet.png" alt=""></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods__card-promotion active">-50%</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="goods-page__footer">
+            <button class="btn btn--nonebg" type="button">Показать больше</button>
+            <div class="goods-page__footer-container">
+                <button class="goods-page__footer-btn" type="button">
+                    <img class="goods-page__footer-img active" src="img/goods-img/arrow-left.svg" alt=""></button>
+                <ul class="goods-page__footer-list">
+                    <li class="goods-page__footer-item active">
+                        <a class="goods-page__footer-link" href="">
+                            1
+                        </a>
+                    </li>
+                    <li class="goods-page__footer-item">
+                        <a class="goods-page__footer-link" href="">
+                            2
+                        </a>
+                    </li>
+                    <li class="goods-page__footer-item">
+                        <a class="goods-page__footer-link" href="">
+                            ...
+                        </a>
+                    </li>
+                    <li class="goods-page__footer-item">
+                        <a class="goods-page__footer-link" href="">
+                            15
+                        </a>
+                    </li>
+                </ul>
+                <button class="goods-page__footer-btn" type="button">
+                    <img class="goods-page__footer-img" src="img/goods-img/right-arrow.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <section class="footer">
+    <!--Footer__head-->
+    <div class="footer__head" style="background-image: url(img/footer/footerbg.jpg);">
+        <div class="container">
+            <div class="footer__head-contant">
+                <h2 class="footer__head-title" >Как выбрать лучший разделочный нож</h2>
+                <div class="footer__head-text">
+                    <p>
+                        При подборе такого изделия нужно учитывать несколько важных факторов. Особенно обращать внимание на то, что ножи разделочные, цена которых намного выше своих аналогов не всегда являются качественными. Потому при выборе изделия учитываете следующие особенности:
+
+                        Рукоять такого инструмента должна обеспечивать плотный захват. При этом разделочный нож не только должен хорошо лежать в руке, но и не скользить при работе, независимо от того, чистый он, или чем-либо испачкан и намочен.
+
+                        Вторым моментом становится заточка, в частности ее тип и угол. Все изделия, представленные в нашем каталоге, обладают наиболее оптимальными характеристиками заточки, которая проводится с использованием лазерных технологий.
+
+                        И следующим важным фактором становится крепление лезвия к ручке, которое должно быть максимально надежным и создавать цельную систему.
+
+                        И если вы не знаете, какой разделочный нож выбрать, то рекомендуем проконсультироваться у наших специалистов, которые помогут принять решение и подобрать изделие, подходящее под Ваши нужды.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__body">
+        <div class="container">
+            <div class="footer__firsth">
+                <!--Spoiler-->
+                <div class="spoiler">
+                    <div class="spoiler__content">
+                        <button data-openSpoiler="inform" class="spoiler__btn" type="button">ИНФОРМАЦИЯ <span  class="spoiler__btn-arrow">&#11167;</span></button>
+                        <nav id="inform" class="spoiler__body">
+                            <ul class="spoiler__list">
+                                <li class="spoiler__link">
+                                    <a class="spoiler__link" href="#">Златоустовские ножи
+                                        в Москве и Московской
+                                        области
+                                    </a>
+                                </li>
+
+                                <li class="spoiler__link">
+                                    <a class="spoiler__link" href="#">Ножевые стали
+                                    </a>
+                                </li>
+                                <li class="spoiler__link">
+                                    <a class="spoiler__link" href="#">О нас
+                                    </a>
+                                </li>
+                                <li class="spoiler__link">
+                                    <a class="spoiler__link" href="#">Условия оплаты
+                                        и доставки
+                                    </a>
+                                </li>
+                                <li class="spoiler__link">
+                                    <a class="spoiler__link" href="#">Политика
+                                        конфиденциальности
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div><!--Spoiler-->
+                <!--Spoiler-->
+                <div class="spoiler">
+                    <div class="spoiler__content">
+                        <button data-openSpoiler="techHelp" class="spoiler__btn"  type="button">СЛУЖБА ПОДДЕРЖКИ <span class="spoiler__btn-arrow">&#11167;</span></button>
+                        <nav class="spoiler__body" id="techHelp">
+                            <ul class="spoiler__list">
+                                <li class="spoiler__link">
+                                    <a class="spoiler__link" href="#">Контактная информация
+                                    </a>
+                                </li>
+                                <li class="spoiler__link">
+                                    <a class="spoiler__link" href="#">Возврат товара
+                                    </a>
+                                </li>
+                                <li class="spoiler__link">
+                                    <a class="spoiler__link" href="#">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div><!--Spoiler-->
+                <!--Spoiler-->
+                <div class="spoiler">
+                    <div class="spoiler__content">
+                        <button data-openSpoiler="addTional" class="spoiler__btn"  type="button">ДОПОЛНИТЕЛЬНО<span class="spoiler__btn-arrow">&#11167;</span></button>
+                        <nav id="addTional" class="spoiler__body">
+                            <ul class="spoiler__list">
+                                <li class="spoiler__link">
+                                    <a class="spoiler__link" href="#">Подарочные сертификаты
+                                    </a>
+                                </li>
+                                <li class="spoiler__link">
+                                    <a class="spoiler__link" href="#">Партнеры
+                                    </a>
+                                </li>
+                                <li class="spoiler__link">
+                                    <a class="spoiler__link" href="#">Товары со скидкой
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div><!--Spoiler-->
+                <!--Spoiler-->
+                <div class="spoiler">
+                    <div class="spoiler__content">
+                        <button data-openSpoiler="personalCabinet" class="spoiler__btn"  type="button">ЛИЧНЫЙ КАБИНЕТ<span class="spoiler__btn-arrow">&#11167;</span></button>
+                        <nav id="personalCabinet" class="spoiler__body">
+                            <ul class="spoiler__list">
+                                <li class="spoiler__link">
+                                    <a class="spoiler__link" href="#">Личный кабинет
+                                    </a>
+                                </li>
+                                <li class="spoiler__link">
+                                    <a class="spoiler__link" href="#">История заказов
+                                    </a>
+                                </li>
+                                <li class="spoiler__link">
+                                    <a class="spoiler__link" href="#">Мои закладки
+                                    </a>
+                                </li>
+                                <li class="spoiler__link">
+                                    <a class="spoiler__link" href="#">Рассылка новостей
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div><!--Spoiler-->
+            </div>
+            <div class="footer__second">
+                <!--Spoiler-->
+                <div class="spoiler">
+                    <div class="spoiler__content">
+                        <button data-openSpoiler="contact" class="spoiler__btn" type="button"> КОНТАКТЫ<span class="spoiler__btn-arrow">&#11167;</span></button>
+                        <nav id="contact" class="spoiler__body">
+                            <ul class="spoiler__list">
+                                <li class="spoiler__item">
+                                    <img class="spoiler__item-icon" src="img/footer/phone.svg" alt="">
+                                    <a class="spoiler__link spoiler__link--second" href="tel:88007774967">8 (800) 777-49-67
+                                    </a>
+                                </li>
+
+                                <li class="spoiler__item">
+                                    <img class="spoiler__item-icon" src="img/footer/time.svg" alt="">
+                                    <div class="spoiler__item-info">
+                                        <p>Пн-Пт </p>
+                                        <p>7:00 - 16:00 (МСК)</p>
+                                    </div>
+                                </li>
+                                <li class="spoiler__item">
+                                    <img class="spoiler__item-icon" src="img/footer/location.svg" alt="">
+                                    <div class="spoiler__item-info">
+                                        <p>Златоуст,</p>
+                                        <p>ул. Шоссейная,</p>
+                                        <p>д. 1, офис «6Б»</p>
+                                    </div>
+                                </li>
+                                <li class="spoiler__item">
+                                    <img class="spoiler__item-icon" src="img/footer/letter.svg" alt="">
+                                    <a class="spoiler__link spoiler__link--second" href="mailto:info@zlatmax.ru">info@zlatmax.ru
+                                    </a>
+                                </li>
+                                <li class="spoiler__link">
+                                    <ul class="spoiler__social">
+                                        <li class="spoiler__social-list">
+                                            <a class="spoiler__social-link" href="#">
+                                                <img class="spoiler__social-icon" src="img/footer/facebook.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="spoiler__social-list">
+                                            <a class="spoiler__social-link" href="#">
+                                                <img class="spoiler__social-icon" src="img/footer/viber.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="spoiler__social-list">
+                                            <a class="spoiler__social-link" href="#">
+                                                <img class="spoiler__social-icon" src="img/footer/telegram.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="spoiler__social-list">
+                                            <a class="spoiler__social-link" href="#">
+                                                <img class="spoiler__social-icon" src="img/footer/watchup.png" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div><!--Spoiler-->
+                <!--Spoiler-->
+                <div class="spoiler">
+                    <div class="spoiler__content">
+                        <button data-openSpoiler="usefuulLink" class="spoiler__btn"  type="button">ПОЛЕЗНЫЕ ССЫЛКИ<span class="spoiler__btn-arrow">&#11167;</span></button>
+                        <nav id="usefuulLink" class="spoiler__body">
+                            <ul class="spoiler__list">
+                                <li class="spoiler__link">
+                                    <a class="spoiler__link" href="#">Способы оплаты и доставки
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div><!--Spoiler-->
+                <!--Spoiler-->
+                <div class="spoiler">
+                    <div class="spoiler__content">
+                        <button data-openSpoiler="gaRanty" class="spoiler__btn"  type="button">НАША ГАРАНТИЯ<span class="spoiler__btn-arrow">&#11167;</span></button>
+                        <nav id="gaRanty" class="spoiler__body">
+                            <ul class="spoiler__list">
+                                <li class="spoiler__link has-inner">
+                                    <p>Недовольны своей покупкой?
+                                        Вы можете вернуть ее в течении
+                                        30 дней с даты получения,
+                                        согласно
+                                        <a class="spoiler__inner-link" href="#">нашим правилам</a></p>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div><!--Spoiler-->
+                <!--Spoiler-->
+                <div class="spoiler">
+                    <div class="spoiler__content">
+                        <button data-openSpoiler="followUs"  class="spoiler__btn"  type="button"> НОВОСТНАЯ РАССЫЛКА<span class="spoiler__btn-arrow">&#11167;</span></button>
+                        <nav id="followUs" class="spoiler__body">
+                            <ul class="spoiler__list">
+                                <li class="spoiler__link has-inner">
+                                    <form class="spoiler__form" action="/" method="post">
+                                        <label for="spoilerinput">Подпишитесь прямо сейчас!</label>
+                                        <div class="spoiler__input-box">
+                                            <input class="spoiler__input" type="text" name="spoilerinput" id="" placeholder="example@gmail.com">
+                                            <button class="spoiler__btn-form" type="button">
+                                                <img class="spoiler__btn-icon" src="img/footer/arrow-spoiler.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </form>
+                                </li>
+                                <li class="spoiler__link has-inner">
+                                    <form action="/" class="spoiler__form" method="post">
+                                        <input class="spoiler__input" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                        <label for="vehicle1"> Я прочитал Условия соглашения и
+                                        согласен с условиями </label><br>
+                                    </form>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div><!--Spoiler-->
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="footer__bottom-info">
+                <div class="footer__bottom-left">
+                    <p>Все материалы, размещенные на сайте, носят справочный характер и не являются
+                        публичной офертой, определяемойположениями Статьи 437 Гражданского кодекса Российской Федерации.
+                        При копировании материалов гиперссылка на www.zlatmax.ru обязательна!</p>
+                </div>
+                <div class="footer__bottom-right">Златоустовские ножи www.zlatmax.ru ©</div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="js/app.min.js"></script>
+</body>
+</html>

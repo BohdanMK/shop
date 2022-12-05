@@ -1,0 +1,43 @@
+.goods__swiper.swiper,
+.news__right-side.swiper {
+    padding: 3rem 0;
+}
+
+.swiper-slide {
+    height: 600px;
+    margin-right: 1rem;
+
+    @include breakpoint($mobile) {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.item.swiper-pagination {
+    display: inline-block;
+    margin-top: 5rem;
+
+}
+
+.goods__swiper .swiper-pagination {
+    margin-bottom: -.1rem;
+}
+
+.goods__swiper .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+}
+
+
+.swiper-pagination-bullet{
+
+    &.swiper-pagination-bullet-active {
+        background-color: $orange;
+    }
+}
+
+.news__right-side .swiper-scrollbar {
+    background-color: rgba($color: #fff, $alpha: .6);
+}
+

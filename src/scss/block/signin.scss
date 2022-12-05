@@ -1,0 +1,53 @@
+.signin {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include breakpoint($laptop) {
+        display: block;
+    }
+}
+
+.signin__list {
+    display: flex;
+    gap: 1rem;
+}
+.signin__item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+
+    &--laptop {
+        display: none;
+
+        @include breakpoint($laptop) {
+            display: block;
+        }
+    }
+
+
+}
+
+.signin__img {
+    width: 22px;
+    height: 27px;
+
+    margin-right: .9rem;
+
+}
+
+.signin__link {
+    @include text-medium;
+    font-weight: 600;
+    line-height: 1.25;
+    text-decoration: none;
+
+    @include breakpoint($laptop) {
+        display: none;
+        color: transparent;
+        font-size: none;
+        visibility: none;
+    }
+}

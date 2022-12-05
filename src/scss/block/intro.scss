@@ -1,0 +1,123 @@
+.intro {
+    max-width: 100%;
+    height: auto;
+    min-height: 788px;
+
+    background: $main url("../../img/intro/lastbg2.png") center repeat;
+    background-size: cover;
+
+}
+
+.intro__body {
+    display: flex;
+    margin-bottom: 3.6rem;
+    min-width: 0;
+
+    position: relative;
+
+    @include breakpoint($laptop) {
+        flex-wrap: wrap;
+    }
+}
+
+.intro__body-btn {
+    @include breakpoint($mobile) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.intro__body-left {
+    width: 55%;
+    min-width: 0;
+
+    @include breakpoint($laptop) {
+        width: 100%;
+    }
+
+}
+
+.intro__body-right {
+    width: 45%;
+    @include breakpoint($laptop) {
+        display: none;
+    }
+}
+
+.intro__arrows {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    z-index: 2;
+
+    @include breakpoint($laptop) {
+        left: 50%;
+    }
+
+    @include breakpoint($mobile) {
+        display: none;
+    }
+}
+
+
+
+.intro__next,
+.intro__prew {
+    display: block;
+    height: 50px;
+    background: transparent;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+}
+
+.intro__prew-img,
+.intro__next-img {
+    width: 50px;
+    height: 50px;
+}
+
+.intro__prew-img {
+    transform: rotate(180deg);
+}
+
+.intro__footer-list {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 5px;
+
+    @include breakpoint($laptop) {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+.intro__footer-item {
+    @include breakpoint($laptop) {
+        width: 45%;
+        margin: 0 auto;
+    }
+    @include breakpoint($mobile) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+.intro__footer-logo {
+    width: 100%;
+    max-width: 265px;
+    height: 145px;
+
+}

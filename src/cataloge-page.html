@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+    "title":"Головна"
+})
+<body>
+<div class="wrapper">
+    @@include('html/header.html',{})
+    <!--select-->
+    <section class="page">
+        <div class="container">
+            <div class="page__container">
+                <h1 class="page__title">Разделочные ножи</h1>
+                <nav class="page__nav">
+                    <ul class="page__list">
+                        <li class="page__item">
+                            <a class="page__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="page__item">
+                            <span href="">Разделочные ножи</span>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="dropdown-form">
+                        <h3 class="dropdown-form__title" class="">Виберить категорію</h3>
+
+                        <div class="dropdown">
+                            <button class="dropdown__btn">По популярности</button>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item" data-value="popular">
+                                    По популярності
+                                </li>
+                                <li class="dropdown__item" data-value="price">
+                                    По ціні
+                                </li>
+                                <li class="dropdown__item" data-value="producer">
+                                    По виробниках
+                                </li>
+                                <li class="dropdown__item" data-value="materials">
+                                    По матеріалам
+                                </li>
+                            </ul>
+                            <input type="text" class="dropdown__input" placeholder="gi">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('html/cataloge-page.html',{})
+
+
+    @@include('html/footer-for-cataloge.html',{})
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="js/app.min.js"></script>
+</body>
+</html>

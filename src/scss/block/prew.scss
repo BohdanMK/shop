@@ -1,0 +1,37 @@
+.prew-block__photo-small {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: .5rem;
+
+    @include breakpoint($laptop-Low) {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+        justify-items: flex-start;
+        gap: .5rem;
+    }
+
+}
+
+.prew-block__photo-container {
+    height: 195px;
+
+    cursor: pointer;
+    transition: .1s linear;
+
+    @include breakpoint($laptop-L) {
+        height: 145px;
+    }
+
+    & img {
+        height: 195px;
+
+        @include breakpoint($laptop-L) {
+            height: 145px;
+        }
+    }
+
+    &:focus {
+        transform: scale(1.02);
+    }
+}
+
+
